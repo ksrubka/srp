@@ -9,6 +9,8 @@ public class CarManager {
         CarManager carManager = new CarManager();
         System.out.println("best car: " + carManager.getBestCar().get());
         System.out.println("Small change");
+        System.out.println("==============");
+        System.out.println(carManager.getCarsNames());
     }
 
     List<Car> carsDb = Arrays.asList(
