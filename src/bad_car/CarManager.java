@@ -14,7 +14,9 @@ public class CarManager {
     List<Car> carsDb = Arrays.asList(
             new Car("1", "Golf III", "Volkswagen"),
             new Car("2", "500", "Fiat"),
-            new Car("3", "Megane", "Renault")
+            new Car("3", "Corolla", "Toyota"),
+            new Car("4", "Seicento", "Fiat"),
+            new Car("5", "Rx7", "Mazdaaaaaaaaaa")
     );
 
     public Optional<Car> getFromDb(String carId) {
