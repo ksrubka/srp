@@ -4,8 +4,13 @@ import java.util.*;
 
 public class CarManager {
 
+    public static void main(String[] args) {
+        CarManager carManager = new CarManager();
+        System.out.println("best car: " + carManager.getBestCar().get());
+    }
+
     List<Car> carsDb = Arrays.asList(
-            new Car("1", "Golf III", "Volkswagen"),
+            new Car("8", "Golf III", "Volkswagen"),
             new Car("2", "500", "Fiat"),
             new Car("3", "Megane", "Renault")
     );
@@ -27,7 +32,7 @@ public class CarManager {
         Map<Car, Integer> carRates = new HashMap<>();
         Car renault = new Car("3", "Megane", "Renault");
         Car fiat = new Car("2", "500", "Fiat");
-        Car golf = new Car("1", "Golf III", "Volkswagen");
+        Car golf = new Car("8", "Golf III", "Volkswagen");
         carRates.put(renault, 1);
         carRates.put(fiat, 2);
         carRates.put(golf, 3);

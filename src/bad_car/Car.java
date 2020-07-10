@@ -44,4 +44,13 @@ public class Car {
         result = 31 * result + (brand != null ? brand.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id='" + id + '\'' +
+                ", model='" + model + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
+    }
 }
