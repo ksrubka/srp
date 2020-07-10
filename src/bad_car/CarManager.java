@@ -4,6 +4,10 @@ import java.util.*;
 
 public class CarManager {
 
+    public static void main(String[] args) {
+        System.out.println("Main method");
+    }
+
     List<Car> carsDb = Arrays.asList(
             new Car("1", "Golf III", "Volkswagen"),
             new Car("2", "500", "Fiat"),
