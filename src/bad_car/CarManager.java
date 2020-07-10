@@ -10,7 +10,7 @@ public class CarManager {
         System.out.println("best car: " + carManager.getBestCar().get());
         System.out.println("Small change");
         System.out.println("==============");
-        System.out.println(carManager.getCarsNames());
+        carManager.getCarsNames();
     }
 
     List<Car> carsDb = Arrays.asList(
@@ -28,11 +28,10 @@ public class CarManager {
                 .findFirst();
     }
 
-    public String getCarsNames() {
-        return carsDb.stream()
+    public void getCarsNames() {
+        carsDb.stream()
                 .map(c -> c.getBrand() + " " + c.getModel())
-                .reduce((prev, next) -> prev + ",")
-                .orElse("Sorry. No cars");
+                .forEach(System.out::println);
     }
 
     public Optional<Car> getBestCar() {
