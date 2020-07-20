@@ -30,6 +30,7 @@ public class CarManager {
 
     public void getCarsNames() {
         carsDb.stream()
+                //comment 1
                 .map(c -> c.getBrand() + " " + c.getModel())
                 .forEach(System.out::println);
     }
